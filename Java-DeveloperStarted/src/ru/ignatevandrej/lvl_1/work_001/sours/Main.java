@@ -19,8 +19,14 @@ public class Main {
 		// TODO Auto-generated method stub
 			System.out.println("Hello World");
 			System.out.printf("Привет %s \n", "всем");
-			BufferedReader Reader = new BufferedReader
+			BufferedReader reader = new BufferedReader
 					(new InputStreamReader(System.in));
-			System.out.println("Вы ввели: " + Reader.readLine());
+			System.out.print("Введите число ");
+			int x = Integer.parseInt(reader.readLine());
+			System.out.printf("Вы ввели число %d: ", x);
+			System.out.println("Вы ввели: " + reader.readLine());
+			
+			int xx;
+			
 	}
 }
