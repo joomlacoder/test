@@ -33,7 +33,7 @@ public class Main {
 			double z = 1.5;
 			byte b = 100;
 			char l = 'a';  
-			System.out.printf("int %d int %d float %f"
+			System.out.printf("\nint %d int %d float %f"
 					+ " double %.10f byte %d char %c"
 					+ " short %d \n",число, x2, y, z, b, l, g);
 			число = 78;
@@ -41,16 +41,17 @@ public class Main {
 			System.out.println("„исло: " + число);
 
 			число = (1+2)*3-7/2%2;
-			System.out.println("–езультат: " + число);
+			System.out.println("\n–езультат: " + число);
 			число = число*2;
 			System.out.println("x2 " + x2 + " число " + число);
-			System.out.println(число *= 2);
-			System.out.println(число -= 3);
-			System.out.println(число++ + " " + число);
-			System.out.println(число-- + " " + число);
-			System.out.println(++число + " " + число);
-			System.out.println(--число + " " + число);
+			System.out.println("i *= 2 " + (число *= 2));
+			System.out.println("i -= 3 " + (число -= 3));
+			System.out.println(число++ + " i++ " + число);
+			System.out.println(число-- + " i-- " + число);
+			System.out.println(++число + " ++i " + число);
+			System.out.println(--число + " --i " + число);
 			
 			число = числоƒва = 7;
+			System.out.println("\n" + число + " " + числоƒва);
 	}
 }
