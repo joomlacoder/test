@@ -26,6 +26,8 @@ public class Main {
 			System.out.printf("Вы ввели число %d: \n", x);
 			System.out.println("Вы ввели: " + reader.readLine());
 			
+			long p = 200L;
+			System.out.print("long" + p);
 			int число = 67;
 			int x2 = 0x1f; //15*16^0+1+16^1 = 31
 			short g = 32000;
