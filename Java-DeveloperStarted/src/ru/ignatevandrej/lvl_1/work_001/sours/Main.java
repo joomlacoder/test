@@ -71,5 +71,34 @@ public class Main {
 			//xor
 			b3 = b1^b2;
 			System.out.println("\nxor " + b3);
+			
+			int qq = 5;
+			int ww = 7;
+			int ee = qq ^ ww;
+			System.out.println("Шифр: " + ee);
+			System.out.println("Расшифровка: " + (ee^ww));
+			
+			System.out.println("\n" + qq + " старт " + ww);
+			qq = qq^ww;
+			ww = ww^qq;
+			qq = qq^ww;
+			System.out.println(qq + " обмен " + ww);
+			
+			b3 = 5 == 3;
+			b3 = 5 != 3;
+			b3 = 5 > 3;
+			b3 = 5 >= 3;
+			b3 = 5 < 3;
+			b3 = 5 <= 3;
+			
+			String s1 = "C:\\\\WINDOWS ";
+			String s2 = "\"Привет\u0021\"";
+			System.out.println("\n" + s1 + s2);
+			System.out.println(String.format("%s%s",s1,s2));
+			StringBuilder sb = new StringBuilder();
+			sb.append("hello");
+			sb.append(" ");
+			sb.append("user");
+			System.out.println(sb.toString());
 	}
 }
