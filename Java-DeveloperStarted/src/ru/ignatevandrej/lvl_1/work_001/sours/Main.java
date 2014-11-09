@@ -55,5 +55,21 @@ public class Main {
 			
 			число = числоƒва = 7;
 			System.out.println("\n" + число + " " + числоƒва);
+	
+			boolean b1 = true;
+			boolean b2 = false;
+			boolean b3;
+			//and
+			b3 = b1 && b2;
+			System.out.println("\nand " + b3);
+			//or
+			b3 = b1 || b2;
+			System.out.println("\nor " + b3);
+			//no
+			b3 = !b1;
+			System.out.println("\nno " + b3);
+			//xor
+			b3 = b1^b2;
+			System.out.println("\nxor " + b3);
 	}
 }
