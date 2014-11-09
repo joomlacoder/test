@@ -10,10 +10,10 @@ public class Main {
 		BufferedReader reader = new BufferedReader
 				(new InputStreamReader(System.in));
 		String name = "";
-		while(name.isEmpty()){
+		do{
 			System.out.print("Введите ваше имя: ");
 			name = reader.readLine();
-		}
+		}while(name.isEmpty());
 		
 		System.out.println(String.format("Привет, %s!", name));
 	}
