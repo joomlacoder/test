@@ -36,7 +36,7 @@ public class Main {
 			byte b = 100;
 			char l = 'a';  
 			System.out.printf("\nint %d int %d float %f"
-					+ " double %.10f byte %d char %c"
+					+ " double %g byte %d char %c"
 					+ " short %d \n",число, x2, y, z, b, l, g);
 			число = 78;
 			int числоƒва = 2;
