@@ -5,11 +5,22 @@ import static java.lang.System.out;
 
 public class Main {
 	public static void main(String[] args) {
-		Person p = new Person();
-		p.Name = "Name";
-		p.Age = 19;
-		out.printf("%s - %d", p.Name, p.Age);
+		Person p = new Person("Name", 33);
+		Person p2 = p;
+		p2.Age = 4;
+		p.show();
+		Test t1 = new Test();
+		t1.IncrementAge(p);
+		p.show();
+		int x = 10, y = 20;
+		out.printf("a = %g\n", t1.average(x, y));
+		out.printf("x = %d\ny = %d\n", x, y );
 		
-		
+		AverageParams pp = new AverageParams(x, y);
+		double r = t1.aberageOut(pp);
+		x = pp.a;
+		y = pp.b;
+		out.printf("a = %g\n", r);
+		out.printf("x = %d\ny = %d", x, y );
 	}
 }
