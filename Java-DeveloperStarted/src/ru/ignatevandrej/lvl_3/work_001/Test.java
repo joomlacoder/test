@@ -17,6 +17,11 @@ public class Test {
 		a++;
 		b++;
 		System.out.printf("a = %d\nb = %d\n", a, b);
-		return (a + b)/2D;
+		return (a + b) / 2D;
+	}
+	
+	public double average(double a, double b){
+		System.out.printf("a = %d\nb = %d\n", a, b);
+		return (a + b) / 2D;
 	}
 }

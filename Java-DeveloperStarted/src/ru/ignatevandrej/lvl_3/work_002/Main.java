@@ -21,6 +21,9 @@ public class Main {
 		x = pp.a;
 		y = pp.b;
 		out.printf("a = %g\n", r);
-		out.printf("x = %d\ny = %d", x, y );
+		out.printf("x = %d\ny = %d\n", x, y );
+		Person p3 = new Person();
+		p3.show();
+		Person.showTotal();
 	}
 }
