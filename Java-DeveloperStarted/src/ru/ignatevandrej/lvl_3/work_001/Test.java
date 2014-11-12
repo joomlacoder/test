@@ -20,6 +20,13 @@ public class Test {
 		return (a + b) / 2D;
 	}
 	
+	public double average(int... b){
+		long s = 0L;
+		for(int i: b)
+			s +=i;
+		return (double)s/b.length;
+	}
+	
 	public double average(double a, double b){
 		System.out.printf("a = %d\nb = %d\n", a, b);
 		return (a + b) / 2D;

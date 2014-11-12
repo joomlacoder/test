@@ -25,5 +25,6 @@ public class Main {
 		Person p3 = new Person();
 		p3.show();
 		Person.showTotal();
+		out.println(t1.average(1,2,3,4,5,6,7,8));
 	}
 }
