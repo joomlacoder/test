@@ -26,5 +26,8 @@ public class Main {
 		p3.show();
 		Person.showTotal();
 		out.println(t1.average(1,2,3,4,5,6,7,8));
+		out.println("***************");
+		Staff staff = new Staff("Andrey", 37, 1, 100);
+		staff.show();
 	}
 }

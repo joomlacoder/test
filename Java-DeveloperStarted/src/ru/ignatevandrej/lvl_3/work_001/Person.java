@@ -19,10 +19,12 @@ public class Person {
 		}
 		
 		public Person(){
-			this("Dedoalt", 0);
+			System.out.println("Person ()");
 		}
 
 		public Person(String Name, int Age){
+			this();
+			System.out.println("Person(name, age)");
 			this.Name = Name;
 			this.Age = Age;
 			Totals++;
