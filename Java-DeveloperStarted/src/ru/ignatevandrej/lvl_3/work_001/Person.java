@@ -15,11 +15,17 @@ public class Person {
 		}
 		
 		public void show(PrintStream s){
-			s.printf("%s - %d\n", this.Name, Age);
+			s.println(this.toString());
+		}
+		
+		@Override
+		public String toString() {
+			return String.format("%s - %d", this.Name, Age);
 		}
 		
 		public Person(){
 			System.out.println("Person ()");
+			Totals++;
 		}
 
 		public Person(String Name, int Age){
@@ -27,7 +33,6 @@ public class Person {
 			System.out.println("Person(name, age)");
 			this.Name = Name;
 			this.Age = Age;
-			Totals++;
 		}
 		
 		public static void showTotal(){

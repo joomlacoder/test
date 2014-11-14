@@ -10,4 +10,14 @@ public class Staff extends Person {
 		this.Number = Number;
 		this.Salary = Salary;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%d - %g %s", this.Number, this.Salary, super.toString());
+	}
+	
+	/*@Override
+	public void show() {
+		System.out.println(this.toString());
+	} */
 }
