@@ -6,9 +6,20 @@ import java.io.*;
 
 public class Person {
 	
-		public String Name;
+		private String Name;
 		public int Age;
-		public static long Totals; 
+		private static long Totals; 
+		
+		public static long getTotas(){
+			return Totals;
+		}
+		public String getName(){
+			return Name;
+		}
+		
+		protected void setName(String name){
+			this.Name = name.toUpperCase();
+		}
 		
 		public void show(){
 			this.show(System.out);
